@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="false">
+    <shape android:tint="@color/azul_primary">
+        <corners android:topLeftRadius="50dp"
+                 android:topRightRadius="50dp"/>
+        <solid android:color="@color/ic_launcher_background" />
+        <stroke
+            android:width="2dip"
+            android:color="@color/ic_launcher_background" />
+        <padding
+            android:bottom="4dip"
+            android:left="4dip"
+            android:right="4dip"
+            android:top="4dip" />
+    </shape>
+</item>
+</selector>

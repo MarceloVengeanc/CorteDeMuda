@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/wrapper_btn_round_dark"
+        android:height="45dp"
+        android:width="45dp"/>
+
+    <item android:drawable="@drawable/ic_plus_svgrepo_com"
+        android:width="30dp"
+        android:height="30dp"
+
+        android:gravity="center"/>
+</layer-list>

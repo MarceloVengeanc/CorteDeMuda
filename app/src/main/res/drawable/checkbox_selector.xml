@@ -1,0 +1,24 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <!-- Cor da caixa de seleção quando estiver marcada -->
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/white" /> <!-- Cor desejada quando estiver marcado -->
+                </shape>
+            </item>
+            <item android:drawable="@android:drawable/checkbox_on_background" />
+        </layer-list>
+    </item>
+    <item android:state_checked="false">
+        <layer-list>
+            <item>
+                <!-- Cor da caixa de seleção quando estiver desmarcada -->
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/temaCinza" /> <!-- Cor desejada quando estiver desmarcado -->
+                </shape>
+            </item>
+            <item android:drawable="@android:drawable/checkbox_off_background" />
+        </layer-list>
+    </item>
+</selector>

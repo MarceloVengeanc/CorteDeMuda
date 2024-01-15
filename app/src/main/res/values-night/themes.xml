@@ -1,0 +1,100 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.CortedeMudaExataID" parent="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/ic_launcher_background</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/light_blue_A400</item>
+        <item name="colorOnPrimarySurface">@color/white</item>
+        <item name="android:textColor">#FFF</item>
+        <item name="android:textColorHint">#FFF</item>
+        <item name="editTextStyle">@style/Widget.AppCompat.EditText</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="LayoutPadraoConstraint" parent="Theme.CortedeMudaExataID">
+        <item name="colorSurface">#FFFFFF</item>
+        <item name="colorOnSurface">#212121</item>
+    </style>
+
+    <style name="LayoutPadraoConstraintInterno" parent="Theme.CortedeMudaExataID">
+        <item name="android:background">#212121</item>
+    </style>
+
+    <style name="LayoutPadraoEditTextLogin" parent="Theme.CortedeMudaExataID">
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:backgroundTint">#DDDCDC</item>
+        <item name="android:ems">10</item>
+    </style>
+
+    <style name="LayoutPadraoBttLogin" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/wrapper_btn_round_dark</item>
+    </style>
+
+    <style name="btnBranco" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/wrapper_btn_branco</item>
+    </style>
+
+    <style name="LayoutPadraoBttPNG" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/wrapper_config_night </item>
+    </style>
+
+    <style name="LayoutArrowLeft" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/wrapper_arrow_left_night </item>
+    </style>
+
+    <style name="LayoutArrowRight" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@drawable/wrapper_arrow_right_night </item>
+    </style>
+
+    <style name="LayoutPadraoBttLupa" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:width">350dp</item>
+        <item name="android:background">@drawable/wrapper_lupa_dark</item>
+    </style>
+
+    <style name="LayoutPadraoBttAdd" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:width">350dp</item>
+        <item name="android:background">@drawable/wrapper_add_dark</item>
+    </style>
+
+    <style name="LayoutPadraoBttDel" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">15dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:width">350dp</item>
+        <item name="android:background">@drawable/wrapper_del_dark</item>
+    </style>
+
+    <style name="LayoutPadraoFrame" parent="Theme.CortedeMudaExataID">
+        <item name="android:background">@drawable/wrapper_scroll_round_dark</item>
+    </style>
+
+    <style name="RecyclerViewBranco" parent="Theme.CortedeMudaExataID">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.ExataIDSistemas.FullscreenContainer" parent="Theme.CortedeMudaExataID">
+        <item name="fullscreenBackgroundColor">@color/light_blue_900</item>
+        <item name="fullscreenTextColor">@color/light_blue_A400</item>
+    </style>
+
+    <style name="LayoutPadraoBtt" parent="Theme.CortedeMudaExataID">
+        <item name="android:padding">10dip</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:width">300dp</item>
+        <item name="android:background">@drawable/wrapper_btn</item>
+    </style>
+</resources>

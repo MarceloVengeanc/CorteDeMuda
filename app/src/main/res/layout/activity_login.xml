@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/LayoutPadraoConstraint"
+    tools:context=".telas.LoginActivity">
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dip"
+
+        android:theme="@style/LayoutPadraoFrame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/LayoutPadraoConstraintInterno"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dip"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="4dp">
+
+            <TextView
+                android:id="@+id/txtColetor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/coletor"
+                app:layout_constraintBottom_toTopOf="@+id/versao_app"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.564"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/editUsuario"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:focusable="false"
+                android:hint="@string/nome_usuario"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                android:tooltipText="Usuário é obrigatório!"
+                app:layout_constraintBottom_toTopOf="@+id/editSenha"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/editMatricula"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/matricula_usuario"
+                android:inputType="number"
+                android:maxLength="20"
+                android:textSize="20sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                android:tooltipText="Usuário é obrigatório!"
+                app:layout_constraintBottom_toTopOf="@+id/editUsuario"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/editSenha"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:hint="@string/senha_usuario"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textSize="20sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/LayoutPadraoBttLogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/wrapper_login"
+                android:drawableTint="@color/white"
+                android:elevation="5dip"
+                android:lines="1"
+                android:padding="15dip"
+                android:text="@string/btn_login"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="normal"
+                app:layout_constraintBottom_toTopOf="@+id/btnSinc"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnSinc"
+                style="@style/LayoutPadraoBttLogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawableStart="@drawable/wrapper_sync"
+                android:drawableTint="@color/white"
+                android:elevation="5dip"
+                android:lines="1"
+                android:text="@string/btn_sincronizar"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:typeface="normal"
+                app:layout_constraintBottom_toTopOf="@+id/txtColetor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/versao_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/wrapper_bordas"
+                android:text="@string/msg_versao_app"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnConfig"
+                style="@style/LayoutPadraoBttPNG"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:elevation="5dip"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="267dp"
+                android:layout_height="275dp"
+                app:layout_constraintBottom_toTopOf="@+id/editMatricula"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/web_hi_res_quadrado" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_primary"
+    tools:context=".telas.configs.ConfigWebServiceManualmenteActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:theme="@style/LayoutPadraoFrame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:theme="@style/LayoutPadraoConstraintInterno">
+
+            <EditText
+                android:id="@+id/etxtConfigWSManualEndereco"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Endereço do servidor"
+                android:inputType="textPersonName"
+                android:textSize="20sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etxtConfigWSManualPorta"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etxtConfigWSManualPorta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Porta"
+                android:inputType="numberSigned"
+                android:textSize="20sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                app:layout_constraintBottom_toTopOf="@id/etxtConfigWSManualEmpresa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etxtConfigWSManualEndereco" />
+
+            <EditText
+                android:id="@+id/etxtConfigWSManualEmpresa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Empresa"
+                android:inputType="numberSigned"
+                android:textSize="20sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                app:layout_constraintBottom_toTopOf="@id/etxtConfigWSManualPrioridade"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etxtConfigWSManualPorta" />
+
+            <EditText
+                android:id="@+id/etxtConfigWSManualPrioridade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Prioridade"
+                android:inputType="numberSigned"
+                android:textSize="20sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                app:layout_constraintBottom_toTopOf="@id/btnSalvarConfigWSManualmente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etxtConfigWSManualEmpresa" />
+
+            <Button
+                android:id="@+id/btnSalvarConfigWSManualmente"
+                style="@style/LayoutPadraoBttLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Salvar"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/btnExcluirConfigWSManualmente"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/etxtConfigWSManualPrioridade" />
+
+            <Button
+                android:id="@+id/btnExcluirConfigWSManualmente"
+                style="@style/LayoutPadraoBttLogin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Excluir"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btnSalvarConfigWSManualmente" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

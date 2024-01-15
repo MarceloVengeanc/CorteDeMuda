@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".telas.ConsultaActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_consulta"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:theme="@style/Theme.CortedeMudaExataID.Toolbar_geral"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/consulta_fundo_filtro"
+        android:layout_width="413dp"
+        android:layout_height="210dp"
+        android:background="@color/azul_primary"
+        app:layout_constraintBottom_toTopOf="@id/rv_registros_consulta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_consulta"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/consulta_datas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:background="@color/azul_primary"
+        android:text="Período:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@id/btn_consulta_opcao_filtro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_consulta" />
+
+    <EditText
+        android:id="@+id/edit_consulta_data_inicial"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DDDCDC"
+        android:enabled="false"
+        android:inputType="date"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/consulta_datas"
+        app:layout_constraintStart_toStartOf="@id/consulta_datas"
+        app:layout_constraintTop_toBottomOf="@+id/consulta_datas" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/btn_consulta_data_inicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/azul_primary"
+        android:src="@drawable/ic_edit_calendar_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_consulta_data_inicial"
+        app:layout_constraintEnd_toEndOf="@id/edit_consulta_data_inicial"
+        app:layout_constraintTop_toTopOf="@id/edit_consulta_data_inicial" />
+
+    <EditText
+        android:id="@+id/edit_consulta_data_final"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E8E4E4"
+        android:enabled="false"
+        android:inputType="date"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/consulta_datas"
+        app:layout_constraintStart_toStartOf="@id/consulta_datas"
+        app:layout_constraintTop_toBottomOf="@+id/edit_consulta_data_inicial" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/btn_consulta_data_final"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@color/azul_primary"
+        android:src="@drawable/ic_edit_calendar_black_24dp"
+        app:layout_constraintBottom_toBottomOf="@id/edit_consulta_data_final"
+        app:layout_constraintEnd_toEndOf="@id/edit_consulta_data_final"
+        app:layout_constraintTop_toTopOf="@id/edit_consulta_data_final" />
+
+    <TextView
+        android:id="@+id/btn_consulta_opcao_filtro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_primary"
+        android:text="Filtrar por:"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/consulta_datas"
+        app:layout_constraintTop_toTopOf="@id/consulta_datas" />
+
+    <EditText
+        android:id="@+id/editConsultaFazenda"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DDDCDC"
+        android:hint="Fazenda"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_consulta_opcao_filtro"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/edit_consulta_data_final"
+        app:layout_constraintTop_toBottomOf="@+id/btn_consulta_opcao_filtro" />
+
+    <Button
+        android:id="@+id/btn_consulta_filtrar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:text="Filtrar"
+        android:textColor="@color/black"
+
+        app:layout_constraintBottom_toBottomOf="@id/consulta_fundo_filtro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/editConsultaFazenda"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_registros_consulta"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/consulta_fundo_filtro" />
+
+    <TextView
+        android:id="@+id/txtListaRegistros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/azul_primary"
+        android:text="Consulta de Movimentações"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/consulta_datas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_consulta" />
+
+    <ImageView
+        android:id="@+id/btnPesquisaFazenda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editConsultaFazenda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/editConsultaFazenda"
+        app:srcCompat="@drawable/pesquisa_icon" />
+
+    <CheckBox
+        android:id="@+id/cbNaoEnviado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="Não Enviados"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btn_consulta_filtrar"
+        app:layout_constraintStart_toEndOf="@+id/edit_consulta_data_final"
+        app:layout_constraintTop_toBottomOf="@+id/editConsultaFazenda"
+        app:layout_constraintVertical_bias="0.157"
+        tools:ignore="HardcodedText,UnusedAttribute" />
+</androidx.constraintlayout.widget.ConstraintLayout>

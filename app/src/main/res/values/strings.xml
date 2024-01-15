@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Corte de Muda ExataID</string>
+    <string name="msg_versao_app">Versão %1$s</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_apontamento">Apontamento</string>
+    <string name="btn_consulta">Consulta</string>
+    <string name="btn_sincronizar">Sincronizar</string>
+    <string name="btn_sair">Sair</string>
+    <string name="btn_adicionar">Adicionar</string>
+    <string name="btn_salvar">Salvar</string>
+    <string name="campo_fazenda">Fazenda</string>
+    <string name="campo_talhao">Talhão</string>
+    <string name="nome_usuario">Usuário</string>
+    <string name="matricula_usuario">Matrícula</string>
+    <string name="senha_usuario">Senha</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancela">Cancelar</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="lista_fazendas">Fazendas(%1$d)</string>
+    <string name="lista_talhoes">Talhões(%1$d)</string>
+    <string name="registros">%1$s</string>
+    <string name="lista_registros">Consulta de Registros (%1$d)</string>
+    <string name="sync_ultimo_sinc">Último Sinc: %1$s</string>
+    <string name="msg_sync_item_tipo">Tipo: %1$s</string>
+    <string name="msg_sync_item_data">Data: %1$s</string>
+    <string name="msg_sync_item_registros">Registro(s): %1$s</string>
+    <string name="msg_sync_item_status">Status: %1$s</string>
+    <string name="sync_ult_sync">Última Sinc.: %1$s</string>
+    <string name="configws_servidor">Servidor: %1$s</string>
+    <string name="configws_porta">Porta: %1$s</string>
+    <string name="configws_empresa">Emp.: %1$s</string>
+    <string name="configws_prioridade">Pri.: %1$s</string>
+    <string name="coletor">Coletor: %1$s</string>
+
+</resources>

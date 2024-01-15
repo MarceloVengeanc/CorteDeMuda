@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/LayoutPadraoConstraint"
+    tools:context=".telas.listas.ListaConsultaFazenda">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dip"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:theme="@style/LayoutPadraoFrame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:theme="@style/LayoutPadraoConstraintInterno">
+
+            <TextView
+                android:id="@+id/txt_listaFazenda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consulta de Fazenda"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/edit_fazendaCodigo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Digite o Código ou Descrição"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:theme="@style/LayoutPadraoEditTextLogin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_listaFazenda" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_ListaFazenda"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout4ApontamentoProducao" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout4ApontamentoProducao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edit_fazendaCodigo">
+
+                <TextView
+                    android:id="@+id/txtCod"
+                    android:layout_width="50dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#1A237E"
+                    android:gravity="center"
+                    android:text="Cód"
+                    android:textColor="#FEFEFE"
+                    android:textSize="20sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/txtDescricao"
+                    android:layout_width="330dp"
+                    android:layout_height="28dp"
+                    android:layout_marginTop="16dp"
+                    android:backgroundTint="#1A237E"
+                    android:gravity="center"
+                    android:text="Descrição"
+                    android:textColor="#FEFEFE"
+                    android:textSize="20sp"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
